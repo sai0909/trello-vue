@@ -35,10 +35,32 @@ export default {
 }
 </script>
 <style lang="scss">
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.26);
+    -webkit-border-radius: 10px;
+    border-radius: 10px
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.87);
+}
 @media(min-width:960px){
   .col-md-3 {
       flex: 0 0 23%;
       max-width: 23%;
   }
+  .v-main__wrap {
+    flex: 1 1 auto;
+    max-width: 100%;
+    position: relative;
+    padding: 0 20px;
+    display: flex;
+    overflow-x: scroll;
+    width: calc(100% - 40px);
+}
 }
 </style>

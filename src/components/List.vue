@@ -51,6 +51,7 @@ export default {
     border-radius: 8px;
     padding: 15px;
     margin-right:1%;
+    margin-top:15px;
     .cards{
         width:100%;
     }

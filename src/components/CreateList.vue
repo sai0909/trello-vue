@@ -63,6 +63,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-top:15px;
   .text-input {
     padding: 10px 15px;
     background-color: #ccc;

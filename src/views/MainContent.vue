@@ -1,6 +1,6 @@
 <template>
   <v-container class="pt-4">
-    <v-row grid-list-md>
+    <v-row grid-list-md class="act-flex">
       <list v-for="({ title, cards }, index) in lists" :key="index" :title="title" :cards="cards" :index="index"></list>
       <create-list></create-list>
     </v-row>
@@ -26,3 +26,17 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+@media(min-width:960px){
+  .act-flex{
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+@media(max-width:960px){
+  .act-flex{
+    padding:0px 20px;
+  }
+}
+</style>
